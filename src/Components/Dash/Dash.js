@@ -72,7 +72,7 @@ class Dash extends Component {
           {
             post.author_username === this.props.username 
             ?
-            <button onClick={_ => this.deletePost(post.post_id)}>delete your post</button>
+              <button onClick={_ => this.deletePost(post.post_id)}>delete your post</button>
             :
             <div className='author-box'>
               <p>by {post.author_username}</p>

@@ -43,7 +43,7 @@ module.exports = {
       const {title, img, content} = req.body
       const date = new Date
       if(id) {
-        db.post.createPost(id, title, img, content, date)
+        db.post.create_post(id, title, img, content, date)
         return res.sendStatus(200)
       }
       return res.status(403).send('please login to post')
